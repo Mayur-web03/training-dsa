@@ -67,5 +67,36 @@ class twosum{
             map.put(nums[i],i);
         }
         
+
+        // approach 3 that is of two pointer approach
+        // array needs to be sorted now 
+
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("Two pointers approach");
+        System.out.println(" ");
+        System.out.println(" ");
+
+
+        Arrays.sort(nums);
+        int left = 0;
+        int right = nums.length-1;
+
+        while(left < right){
+            int sum = nums[left] + nums[right];
+
+            if(target == sum){
+                result[0] = nums[left];
+                result[1] = nums[right];
+                System.out.println("Combination found {single}");
+                System.out.println("result array is: "+Arrays.toString(result));
+                left++;
+                right--;
+            } else if(sum < target){
+                left++;
+            } else {
+                right--;
+            }
+        }
     }
 }
