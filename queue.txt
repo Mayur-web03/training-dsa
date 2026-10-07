@@ -1,0 +1,48 @@
+queue is an ordered collection of itmes in which items can be inserted from one position i.e rear 
+and remove from another position called as front thus the queue operates on FIFO principle
+or FCFS principle
+IMP Methods are :
+1)size() -> To know the no. of elements in queue
+2)offer(object o) -> To add/insert object o in queue
+3)poll() -> to remove element from queue 
+4)preek() -> to inspect the element to be removed
+5) isempty() -> to check whether queue is empty or not
+there are several types of queue
+a) linear queue
+b) circular queue
+c) dequeue(double ended queue)
+d)priority queue
+
+INTERVIEW 
+q1) remove from rear and front and insert from front and 
+rear is posssible in dequeue works on both principle LIFO and FIFO
+q2) priority queue this is the special data strucutre in which some intrinsic(sab internal)
+ordering among the elements will determine which element should be removed first.
+priority queue implements minimum heap by default 
+HEAP is a binary tree which staisfies the heap properties and which can be 
+represented using an array
+There are two types of heap 
+1) minimum heap 
+2) maximum heap 
+in minimum heap the value of the parent node should be less than equal to child node. 
+in maximum heap the value in parent node should be greater than or equal to value in child node 
+also note that in minimum heap the root contains smallest value from tree where as in max heap it 
+contains largest value 
+
+insert the fill values in a tree binary tree which implements im heap 
+data -> 5 3 8 2 4
+1) add 5 
+5 is at root 
+2) AdD 3                                
+        5       //NOT a min HEAP        3   //MIN HEAP 
+        /                              / 
+        3                              5    
+3) ADD  8
+        3   
+        /                              / 
+        5                              5 
+refer image in github 
+
+DELETION element from min heap-> It is always the root which gets deleted and replaced by 
+last node in both
+
